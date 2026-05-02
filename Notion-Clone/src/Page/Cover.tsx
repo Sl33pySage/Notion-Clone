@@ -12,7 +12,7 @@ export const Cover = () => {
   return (
     <div className={styles.cover}>
       <img className={styles.image} src="" alt="Cover" />
-      <button onClick={onChangeCoverImage} className="styles.button">
+      <button onClick={onChangeCoverImage} className={styles.button}>
         Change cover
       </button>
       <input
