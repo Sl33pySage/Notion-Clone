@@ -1,6 +1,8 @@
 import { NodeData } from "../utils/types";
 import { useRef, useEffect } from "react";
 import styles from "./Title.module.css";
+import { nanoid } from "nanoid";
+
 type TitleProps = {
   title: string;
   changePageTitle(title: string): void;
@@ -25,7 +27,7 @@ export const Title = ({ title, changePageTitle, addNode }: TitleProps) => {
         onKeyDown={(event) => {
           if (event.key === "Enter") {
             event.preventDefault();
-            addNode({ type: "text", id: 0, value: "" }, 0);
+            addNode({ type: "text", id: nanoid(), value: "" }, 0);
           }
         }}
       ></h1>
