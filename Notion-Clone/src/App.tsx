@@ -1,11 +1,17 @@
 import "./App.css";
 import { Cover } from "./Page/Cover.tsx";
 import { Page } from "./Page/Page";
+import { AppStateProvider } from "./state/AppStateContext";
+import { createPage } from "./utils/createPage.ts";
+
+const initialState = createPage();
 
 function App() {
   return (
     <>
-      <Page />
+      <AppStateProvider initialState={initialState}>
+        <Page />
+      </AppStateProvider>
     </>
   );
 }
