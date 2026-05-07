@@ -5,7 +5,8 @@ import { BasicNode } from "../Node/BasicNode";
 import { Title } from "./Title";
 import { nanoid } from "nanoid";
 import { useAppState } from "../state/AppStateContext";
-
+// <script src="https://gist.github.com/satansdeer/d9a59985d438054b475df7c85a4edb86.js"></script>
+//<script src="https://gist.github.com/satansdeer/d10f7c4aeb126ccb113e2bd91735c947.js"></script>
 export const Page = () => {
   const { title, nodes, addNode, setTitle } = useAppState();
 
