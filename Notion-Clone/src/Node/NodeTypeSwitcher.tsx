@@ -1,12 +1,5 @@
-import { NodeType, NodeData } from "../utils/types";
+import { type NodeType, type NodeData } from "../utils/types";
 import { BasicNode } from "./BasicNode";
-
-type NodeTypeSwitcherProps = {
-  node: NodaData;
-  updatedFocusedIndex(index: number): void;
-  isFocused: boolean;
-  index: number;
-};
 
 const TEXT_NODE_TYPES: NodeType[] = [
   "text",
