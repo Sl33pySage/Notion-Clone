@@ -1,4 +1,4 @@
-import { Page, NodeData, NodeType } from "../utils/types";
+import { type Page, type NodeData, type NodeType } from "../utils/types";
 import { useImmer } from "use-immer";
 
 export const usePageState = (initialState: Page) => {

@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import { usePageState } from "./usePageState";
-import { Page } from "../utils/types";
+import { type Page } from "../utils/types";
 
 type AppStateContextType = ReturnType<typeof usePageState>;
 
